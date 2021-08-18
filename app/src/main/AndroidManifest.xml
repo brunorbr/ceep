@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ceep">
-        <activity android:name=".ui.NoteListActivity">
+        <activity android:name=".ui.view.NoteListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.brunodev.ceep.ui.view.NoteListActivity">
 
-    <ListView
-        android:id="@+id/listView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/note_list_recycler_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/note_list_add_note"
