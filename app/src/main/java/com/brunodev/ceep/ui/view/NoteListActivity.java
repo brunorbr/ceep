@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.brunodev.ceep.R;
 import com.brunodev.ceep.dao.NoteDAO;
@@ -29,6 +30,8 @@ public class NoteListActivity extends AppCompatActivity {
         }
         List<Note> allNotes = dao.listAll();
 
-        noteList.setAdapter(new NoteListAdapter());
+        noteList.setAdapter(new NoteListAdapter(allNotes, this));
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        noteList.setLayoutManager(layoutManager);
     }
 }
